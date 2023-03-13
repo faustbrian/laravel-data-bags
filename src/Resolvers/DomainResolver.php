@@ -8,7 +8,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 use PreemStudio\DataBags\Contracts\Resolver;
 
-class DomainResolver implements Resolver
+final class DomainResolver implements Resolver
 {
     public function resolve(array $bags, string $key): mixed
     {

@@ -12,12 +12,12 @@ final class ResolverFactory
     {
         try {
             $resolver = match ($resolver) {
-                'controller'  => fn (string $key) => DataBag::resolveByController($key),
-                'domain'      => fn (string $key) => DataBag::resolveByDomain($key),
-                'glob'        => fn (string $key) => DataBag::resolveByGlob($key),
-                'name'        => fn (string $key) => DataBag::resolveByName($key),
-                'path'        => fn (string $key) => DataBag::resolveByPath($key),
-                'regex'       => fn (string $key) => DataBag::resolveByRegex($key),
+                'controller' => fn (string $key) => DataBag::resolveByController($key),
+                'domain' => fn (string $key) => DataBag::resolveByDomain($key),
+                'glob' => fn (string $key) => DataBag::resolveByGlob($key),
+                'name' => fn (string $key) => DataBag::resolveByName($key),
+                'path' => fn (string $key) => DataBag::resolveByPath($key),
+                'regex' => fn (string $key) => DataBag::resolveByRegex($key),
             };
 
             return $resolver($key);

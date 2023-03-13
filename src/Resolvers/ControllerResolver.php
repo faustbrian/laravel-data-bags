@@ -7,7 +7,7 @@ namespace PreemStudio\DataBags\Resolvers;
 use Illuminate\Support\Facades\Route;
 use PreemStudio\DataBags\Contracts\Resolver;
 
-class ControllerResolver implements Resolver
+final class ControllerResolver implements Resolver
 {
     use Concerns\InteractsWithBag;
 

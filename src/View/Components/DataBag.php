@@ -18,9 +18,9 @@ final class DataBag extends Component
 
     public function __construct(string $key, string $resolver, string $view)
     {
-        $this->key      = $key;
+        $this->key = $key;
         $this->resolver = $resolver;
-        $this->view     = $view;
+        $this->view = $view;
     }
 
     public function render(): \Illuminate\Contracts\View\View

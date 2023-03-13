@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Tests\Unit;
+namespace Tests;
 
 use PreemStudio\DataBags\ResolverFactory;
 
-class DataBagController
+final class DataBagController
 {
     public function __invoke()
     {

@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use PreemStudio\DataBags\View\Components\DataBag;
 
-class DataBagsServiceProvider extends ServiceProvider
+final class DataBagsServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
