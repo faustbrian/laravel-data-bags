@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests;
+namespace Tests\Unit;
 
 use Illuminate\Support\Facades\Route;
 use PreemStudio\DataBags\DataBag;
