@@ -8,8 +8,8 @@ use Illuminate\Support\Facades\Route;
 use PreemStudio\DataBags\DataBag;
 use PreemStudio\DataBags\Resolvers\RegexResolver;
 
-it('should match by a glob pattern', function () {
-    expect((new RegexResolver)->resolve([
+it('should match by a glob pattern', function (): void {
+    expect((new RegexResolver())->resolve([
         'meta' => [
             '|(/*)|' => [
                 'title' => 'Any',
@@ -18,7 +18,7 @@ it('should match by a glob pattern', function () {
     ], 'meta'))->toBe(['title' => 'Any']);
 });
 
-it('should match by a glob pattern through a request', function () {
+it('should match by a glob pattern through a request', function (): void {
     DataBag::register('meta', [
         '|(posts/hello-*)|' => [
             'title' => 'Hello World',

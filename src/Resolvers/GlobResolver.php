@@ -12,11 +12,11 @@ final class GlobResolver implements Resolver
 {
     public function resolve(array $bags, string $key): mixed
     {
-        $bag      = Arr::get($bags, $key);
-        $subjects = array_keys($bag);
+        $bag = Arr::get($bags, $key);
+        $subjects = \array_keys($bag);
 
         foreach ($subjects as $subject) {
-            if (fnmatch($subject, Request::path())) {
+            if (\fnmatch($subject, Request::path())) {
                 return $bag[$subject];
             }
         }

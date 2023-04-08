@@ -17,36 +17,36 @@ final class DataBag
 
     public static function register(string $key, array $data): void
     {
-        static::$bags[$key] = $data;
+        self::$bags[$key] = $data;
     }
 
     public static function resolveByController(string $key): mixed
     {
-        return (new ControllerResolver)->resolve(static::$bags, $key);
+        return (new ControllerResolver())->resolve(self::$bags, $key);
     }
 
     public static function resolveByDomain(string $key): mixed
     {
-        return (new DomainResolver)->resolve(static::$bags, $key);
+        return (new DomainResolver())->resolve(self::$bags, $key);
     }
 
     public static function resolveByName(string $key): mixed
     {
-        return (new NameResolver)->resolve(static::$bags, $key);
+        return (new NameResolver())->resolve(self::$bags, $key);
     }
 
     public static function resolveByPath(string $key): mixed
     {
-        return (new PathResolver)->resolve(static::$bags, $key);
+        return (new PathResolver())->resolve(self::$bags, $key);
     }
 
     public static function resolveByGlob(string $key): mixed
     {
-        return (new GlobResolver)->resolve(static::$bags, $key);
+        return (new GlobResolver())->resolve(self::$bags, $key);
     }
 
     public static function resolveByRegex(string $key): mixed
     {
-        return (new RegexResolver)->resolve(static::$bags, $key);
+        return (new RegexResolver())->resolve(self::$bags, $key);
     }
 }

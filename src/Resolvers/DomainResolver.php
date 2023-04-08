@@ -14,10 +14,10 @@ final class DomainResolver implements Resolver
     {
         $path = Route::current()->getDomain();
 
-        if (! empty($bags[$key][$path])) {
+        if (!empty($bags[$key][$path])) {
             return $bags[$key][$path];
         }
 
-        return Arr::get($bags, "$key.*");
+        return Arr::get($bags, "{$key}.*");
     }
 }

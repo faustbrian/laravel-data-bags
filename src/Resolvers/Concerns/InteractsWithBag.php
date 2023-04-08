@@ -10,10 +10,10 @@ trait InteractsWithBag
 {
     private function resolveFromBag(array $bags, string $key, string $path): mixed
     {
-        if (Arr::has($bags, "$key.$path")) {
-            return Arr::get($bags, "$key.$path");
+        if (Arr::has($bags, "{$key}.{$path}")) {
+            return Arr::get($bags, "{$key}.{$path}");
         }
 
-        return Arr::get($bags, "$key.*");
+        return Arr::get($bags, "{$key}.*");
     }
 }
