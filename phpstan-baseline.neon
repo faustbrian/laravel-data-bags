@@ -1,0 +1,61 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Method BombenProdukt\\\\DataBags\\\\ResolverFactory\\:\\:make\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/ResolverFactory.php
+
+		-
+			message: "#^Part \\$resolver \\(\\(Closure\\(string\\)\\: mixed\\)\\|string\\) of encapsed string cannot be cast to string\\.$#"
+			count: 1
+			path: src/ResolverFactory.php
+
+		-
+			message: "#^Cannot call method getActionName\\(\\) on Illuminate\\\\Routing\\\\Route\\|null\\.$#"
+			count: 1
+			path: src/Resolvers/ControllerResolver.php
+
+		-
+			message: "#^Cannot call method getDomain\\(\\) on Illuminate\\\\Routing\\\\Route\\|null\\.$#"
+			count: 1
+			path: src/Resolvers/DomainResolver.php
+
+		-
+			message: "#^Cannot access offset int\\|string on mixed\\.$#"
+			count: 1
+			path: src/Resolvers/GlobResolver.php
+
+		-
+			message: "#^Parameter \\#1 \\$array of function array_keys expects array, mixed given\\.$#"
+			count: 1
+			path: src/Resolvers/GlobResolver.php
+
+		-
+			message: "#^Parameter \\#1 \\$pattern of function fnmatch expects string, int\\|string given\\.$#"
+			count: 1
+			path: src/Resolvers/GlobResolver.php
+
+		-
+			message: "#^Cannot call method getName\\(\\) on Illuminate\\\\Routing\\\\Route\\|null\\.$#"
+			count: 1
+			path: src/Resolvers/NameResolver.php
+
+		-
+			message: "#^Parameter \\#3 \\$path of method BombenProdukt\\\\DataBags\\\\Resolvers\\\\NameResolver\\:\\:resolveFromBag\\(\\) expects string, string\\|null given\\.$#"
+			count: 1
+			path: src/Resolvers/NameResolver.php
+
+		-
+			message: "#^Cannot access offset int\\|string on mixed\\.$#"
+			count: 1
+			path: src/Resolvers/RegexResolver.php
+
+		-
+			message: "#^Parameter \\#1 \\$array of function array_keys expects array, mixed given\\.$#"
+			count: 1
+			path: src/Resolvers/RegexResolver.php
+
+		-
+			message: "#^Parameter \\#1 \\$pattern of static method Spatie\\\\Regex\\\\Regex\\:\\:match\\(\\) expects string, int\\|string given\\.$#"
+			count: 1
+			path: src/Resolvers/RegexResolver.php
