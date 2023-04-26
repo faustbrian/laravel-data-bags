@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Tests\Unit;
 
-use Illuminate\Support\Facades\Route;
 use BombenProdukt\DataBags\DataBag;
 use BombenProdukt\DataBags\ResolverFactory;
+use Illuminate\Support\Facades\Route;
 
 it('should resolve via controller', function (): void {
     DataBag::register('meta', [

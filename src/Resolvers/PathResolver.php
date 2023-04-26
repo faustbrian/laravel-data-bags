@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace BombenProdukt\DataBags\Resolvers;
 
-use Illuminate\Support\Facades\Request;
 use BombenProdukt\DataBags\Contracts\Resolver;
+use Illuminate\Support\Facades\Request;
 
 final class PathResolver implements Resolver
 {

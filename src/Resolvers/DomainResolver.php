@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace BombenProdukt\DataBags\Resolvers;
 
+use BombenProdukt\DataBags\Contracts\Resolver;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
-use BombenProdukt\DataBags\Contracts\Resolver;
 
 final class DomainResolver implements Resolver
 {

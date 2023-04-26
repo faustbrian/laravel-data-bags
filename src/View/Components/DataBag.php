@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace BombenProdukt\DataBags\View\Components;
 
+use BombenProdukt\DataBags\ResolverFactory;
 use Illuminate\Support\Facades\View;
 use Illuminate\View\Component;
-use BombenProdukt\DataBags\ResolverFactory;
 
 final class DataBag extends Component
 {

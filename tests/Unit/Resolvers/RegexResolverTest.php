@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Tests\Unit\Resolvers;
 
-use Illuminate\Support\Facades\Route;
 use BombenProdukt\DataBags\DataBag;
 use BombenProdukt\DataBags\Resolvers\RegexResolver;
+use Illuminate\Support\Facades\Route;
 
 it('should match by a glob pattern', function (): void {
     expect((new RegexResolver())->resolve([

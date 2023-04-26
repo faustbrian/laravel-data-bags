@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace BombenProdukt\DataBags\Resolvers;
 
-use Illuminate\Support\Facades\Route;
 use BombenProdukt\DataBags\Contracts\Resolver;
+use Illuminate\Support\Facades\Route;
 
 final class NameResolver implements Resolver
 {

@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace BombenProdukt\DataBags\Providers;
 
+use BombenProdukt\DataBags\View\Components\DataBag;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
-use BombenProdukt\DataBags\View\Components\DataBag;
 
 final class DataBagsServiceProvider extends ServiceProvider
 {
