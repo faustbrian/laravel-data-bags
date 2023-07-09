@@ -4,20 +4,6 @@
     </a>
 </p>
 
-<p align="center">
-    <a href="https://github.com/faustbrian/laravel-data-bags/actions">
-        <img src="https://badge.sh/github/check-runs/BombenProdukt/laravel-data-bags" alt="Checks" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/laravel-data-bags">
-        <img src="https://badge.sh/packagist/downloads/BombenProdukt/laravel-data-bags" alt="Downloads" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/laravel-data-bags">
-        <img src="https://badge.sh/packagist/version/BombenProdukt/laravel-data-bags" alt="Version" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/laravel-data-bags">
-        <img src="https://badge.sh/packagist/license/BombenProdukt/laravel-data-bags" alt="License" />
-    </a>
-</p>
 
 ## About Laravel Data Bags
 
