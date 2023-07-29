@@ -21,6 +21,11 @@ parameters:
 			path: src/Resolvers/DomainResolver.php
 
 		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Resolvers/DomainResolver.php
+
+		-
 			message: "#^Cannot access offset int\\|string on mixed\\.$#"
 			count: 1
 			path: src/Resolvers/GlobResolver.php
