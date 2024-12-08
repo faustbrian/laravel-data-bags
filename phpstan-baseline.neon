@@ -1,0 +1,156 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Cannot call method in\\(\\) on iterable\\<SplFileInfo\\>\\.$#"
+			count: 1
+			path: .php-cs-fixer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Datbag\\\\Contracts\\\\Resolver\\:\\:resolve\\(\\) has parameter \\$bags with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/Resolver.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Datbag\\\\DataBag\\:\\:register\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/DataBag.php
+
+		-
+			message: "#^Property BaseCodeOy\\\\Datbag\\\\DataBag\\:\\:\\$bags type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/DataBag.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Datbag\\\\ResolverFactory\\:\\:make\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/ResolverFactory.php
+
+		-
+			message: "#^Parameter \\#2 \\.\\.\\.\\$values of function sprintf expects bool\\|float\\|int\\|string\\|null, \\(Closure\\)\\|string given\\.$#"
+			count: 1
+			path: src/ResolverFactory.php
+
+		-
+			message: "#^Cannot call method getActionName\\(\\) on Illuminate\\\\Routing\\\\Route\\|null\\.$#"
+			count: 1
+			path: src/Resolvers/ControllerResolver.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Datbag\\\\Resolvers\\\\ControllerResolver\\:\\:resolve\\(\\) has parameter \\$bags with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Resolvers/ControllerResolver.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Datbag\\\\Resolvers\\\\ControllerResolver\\:\\:resolveFromBag\\(\\) has parameter \\$bags with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Resolvers/ControllerResolver.php
+
+		-
+			message: "#^Cannot call method getDomain\\(\\) on Illuminate\\\\Routing\\\\Route\\|null\\.$#"
+			count: 1
+			path: src/Resolvers/DomainResolver.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Resolvers/DomainResolver.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Datbag\\\\Resolvers\\\\DomainResolver\\:\\:resolve\\(\\) has parameter \\$bags with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Resolvers/DomainResolver.php
+
+		-
+			message: "#^Cannot access offset int\\|string on mixed\\.$#"
+			count: 1
+			path: src/Resolvers/GlobResolver.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Datbag\\\\Resolvers\\\\GlobResolver\\:\\:resolve\\(\\) has parameter \\$bags with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Resolvers/GlobResolver.php
+
+		-
+			message: "#^Parameter \\#1 \\$array of function array_keys expects array, mixed given\\.$#"
+			count: 1
+			path: src/Resolvers/GlobResolver.php
+
+		-
+			message: "#^Parameter \\#1 \\$pattern of function fnmatch expects string, int\\|string given\\.$#"
+			count: 1
+			path: src/Resolvers/GlobResolver.php
+
+		-
+			message: "#^Cannot call method getName\\(\\) on Illuminate\\\\Routing\\\\Route\\|null\\.$#"
+			count: 1
+			path: src/Resolvers/NameResolver.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Datbag\\\\Resolvers\\\\NameResolver\\:\\:resolve\\(\\) has parameter \\$bags with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Resolvers/NameResolver.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Datbag\\\\Resolvers\\\\NameResolver\\:\\:resolveFromBag\\(\\) has parameter \\$bags with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Resolvers/NameResolver.php
+
+		-
+			message: "#^Parameter \\#3 \\$path of method BaseCodeOy\\\\Datbag\\\\Resolvers\\\\NameResolver\\:\\:resolveFromBag\\(\\) expects string, string\\|null given\\.$#"
+			count: 1
+			path: src/Resolvers/NameResolver.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Datbag\\\\Resolvers\\\\PathResolver\\:\\:resolve\\(\\) has parameter \\$bags with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Resolvers/PathResolver.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Datbag\\\\Resolvers\\\\PathResolver\\:\\:resolveFromBag\\(\\) has parameter \\$bags with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Resolvers/PathResolver.php
+
+		-
+			message: "#^Cannot access offset int\\|string on mixed\\.$#"
+			count: 1
+			path: src/Resolvers/RegexResolver.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Datbag\\\\Resolvers\\\\RegexResolver\\:\\:resolve\\(\\) has parameter \\$bags with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Resolvers/RegexResolver.php
+
+		-
+			message: "#^Parameter \\#1 \\$array of function array_keys expects array, mixed given\\.$#"
+			count: 1
+			path: src/Resolvers/RegexResolver.php
+
+		-
+			message: "#^Parameter \\#1 \\$pattern of static method Spatie\\\\Regex\\\\Regex\\:\\:match\\(\\) expects string, int\\|string given\\.$#"
+			count: 1
+			path: src/Resolvers/RegexResolver.php
+
+		-
+			message: "#^Undefined variable\\: \\$this$#"
+			count: 1
+			path: tests/Pest.php
+
+		-
+			message: "#^Method Tests\\\\Unit\\\\DataBagController\\:\\:__invoke\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: tests/Unit/DataBagController.php
+
+		-
+			message: "#^Call to an undefined method PHPUnit\\\\Framework\\\\TestCase\\:\\:call\\(\\)\\.$#"
+			count: 6
+			path: tests/Unit/ResolverFactoryTest.php
+
+		-
+			message: "#^Call to an undefined method PHPUnit\\\\Framework\\\\TestCase\\:\\:call\\(\\)\\.$#"
+			count: 3
+			path: tests/Unit/Resolvers/GlobResolverTest.php
+
+		-
+			message: "#^Call to an undefined method PHPUnit\\\\Framework\\\\TestCase\\:\\:call\\(\\)\\.$#"
+			count: 3
+			path: tests/Unit/Resolvers/RegexResolverTest.php

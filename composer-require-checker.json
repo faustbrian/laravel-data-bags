@@ -1,0 +1,20 @@
+{
+    "symbol-whitelist": [
+        "array",
+        "bool",
+        "false",
+        "int",
+        "null",
+        "self",
+        "string",
+        "true",
+        "Illuminate\\Contracts\\View\\View",
+        "Illuminate\\Support\\Arr",
+        "Illuminate\\Support\\Facades\\Blade",
+        "Illuminate\\Support\\Facades\\Request",
+        "Illuminate\\Support\\Facades\\Route",
+        "Illuminate\\Support\\Facades\\View",
+        "Illuminate\\Support\\ServiceProvider",
+        "Illuminate\\View\\Component"
+    ]
+}
